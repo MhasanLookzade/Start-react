@@ -37,7 +37,7 @@ npm run dev
 http://localhost:5173
 ```
 
-## 5. پروژه را به گیت هاب منتقل کنید
+## 5. اینم از گیت هابش
 
 ```bash
 git init
