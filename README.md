@@ -1,12 +1,54 @@
-# React + Vite
+# ✅ React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک پروژه ساده لیست کارها (ToDo App) با استفاده از React و Vite پیاده‌سازی شده است.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ مراحل راه‌اندازی پروژه
 
-## Expanding the ESLint configuration
+### 1. نصب Node.js و npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+ابتدا مطمئن شوید که Node.js و npm نصب شده‌اند:
+
+```bash
+node -v
+npm -v
+
+## 2.ساخت پروژه با Vite
+```bash
+npm create vite@latest my-react-app -- --template react
+cd my-react-app
+npm install
+```
+
+##3. اجرای پروژه در لوکال
+```bash
+npm run dev
+```
+
+## 4. استفاده از پروژه
+پروژه را در مرورگر باز کنید و از آن استفاده کنید.   
+```bash
+http://localhost:5173
+```
+
+## 5. پروژه را به گیت هاب منتقل کنید   
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin main
+```
+##  3. ساخت توکن دسترسی 
+   به دلیل غیرفعال شدن رمز عبور، باید از توکن استفاده کنید:
+
+برو به: https://github.com/settings/tokens
+
+روی Generate new token کلیک کن
+
+دسترسی repo رو فعال کن
+
+توکن ساخته شده را هنگام Push به‌جای رمز عبور وارد کن
