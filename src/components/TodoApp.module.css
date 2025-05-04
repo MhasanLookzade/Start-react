@@ -1,0 +1,46 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: red;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: white;
+}
+
+.actionBtn {
+    margin-left: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+}

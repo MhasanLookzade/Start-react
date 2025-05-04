@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './TodoApp.module.css';
 
 function TodoApp() {
     const [tasks, setTasks] = useState([]);
@@ -22,29 +23,32 @@ function TodoApp() {
     };
 
     return (
-        <div style={{ maxWidth: '400px', margin: 'auto' }}>
+        <div className={styles.container}>
             <h2>📝 لیست کارها</h2>
             <input
+                className={styles.input}
                 type="text"
                 value={input}
                 placeholder="کار جدید..."
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && addTask()}
             />
-            <button onClick={addTask}>➕ افزودن</button>
+            <button onClick={addTask} className={styles.button}>➕ افزودن</button>
             <ul>
                 {tasks.map((task, index) => (
-                    <li key={index} style={{
-                        textDecoration: task.done ? 'line-through' : 'none',
-                        marginTop: '10px'
-                    }}>
-                        {task.text}
-                        <button onClick={() => toggleDone(index)} style={{ marginLeft: '10px' }}>
-                            ✅
-                        </button>
-                        <button onClick={() => deleteTask(index)} style={{ marginLeft: '5px', color: 'red' }}>
-                            🗑
-                        </button>
+                    <li
+                        key={index}
+                        className={`${styles.taskItem} ${task.done ? styles.done : ''}`}
+                    >
+                        <span>{task.text}</span>
+                        <span>
+                            <button onClick={() => toggleDone(index)} className={styles.actionBtn}>
+                                ✅
+                            </button>
+                            <button onClick={() => deleteTask(index)} className={styles.actionBtn} style={{ color: 'red' }}>
+                                🗑
+                            </button>
+                        </span>
                     </li>
                 ))}
             </ul>
