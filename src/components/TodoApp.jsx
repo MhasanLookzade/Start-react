@@ -4,6 +4,7 @@ import styles from './TodoApp.module.css';
 function TodoApp() {
     const [tasks, setTasks] = useState([]);
     const [input, setInput] = useState('');
+    const [count, setCount] = useState(0);
 
     const addTask = () => {
         if (input.trim() === '') return;
@@ -24,6 +25,9 @@ function TodoApp() {
 
     return (
         <div className={styles.container}>
+            <div className={ styles.counter}>beshmar{count}
+            <button onClick={() => setCount(count + 1)}>+</button>
+            </div>
             <h2>📝 لیست کارها</h2>
             <input
                 className={styles.input}
