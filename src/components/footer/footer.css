@@ -1,0 +1,38 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+
+.footer .column {
+    flex: 1 1 200px;
+    margin: 1rem;
+}
+
+.footer h2 {
+    color: #00d26a;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    margin: 0.3rem 0;
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
