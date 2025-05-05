@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    direction: ltr;
+    background-color: #f8f9fa;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.start-btn {
+    background-color: #8ee9b0;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #000022;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 40px;
+}
